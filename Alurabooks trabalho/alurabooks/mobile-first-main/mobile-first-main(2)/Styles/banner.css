@@ -1,0 +1,37 @@
+/* Estilização do banner*/
+.banner {
+    background: var(--azul-degrade);
+    color: var(--branco);
+    text-align: center;
+    padding: 2.5em 2em;
+}
+/*Estilização do titulo no banner*/
+.banner__titulo {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*Estilização do texto no banner*/
+.banner__texto {
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+/*Estilização da barra de pesquisa no banner*/
+.banner__pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    color: var(--branco);
+    border-radius: 24px;
+    width: 100%;
+}
+/*Estilização secundaria da barra de pesquisa*/
+.banner__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--branco);
+    background: url(“../img/Lupa.svg”) no-repeat;
+    background-position: 1em;
+    }

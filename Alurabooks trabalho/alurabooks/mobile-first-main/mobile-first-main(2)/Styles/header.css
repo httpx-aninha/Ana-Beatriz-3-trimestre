@@ -1,0 +1,94 @@
+/* Estilo para o ícone do menu hambúrguer */
+.cabeçalho-menu-burger {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+/* Estilo para o ícone do menu hambúrguer quando o botão está marcado */
+.container__botao:checked~.container__rotulo>.cabeçalho-menu-burger {
+    background-image: url("../img/Menu_aberto.svg");
+}
+
+/* Estilo para o rótulo do botão quando o botão está marcado */
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
+}
+
+/* Estilo para o cabeçalho */
+.cabeçalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilo para o container geral */
+.container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para imagens dentro do container */
+.container__imagem {
+    padding: 1em;
+}
+
+/* Estilo para a lista de menu */
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+/* Estilo para exibir a lista de menu quando o botão está marcado */
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+
+/* Estilo para títulos e itens da lista de menu */
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+/* Estilo para o título da lista de menu */
+.lista-menu__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+/* Estilo para os links da lista de menu */
+.lista-menu__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+/* Estilo para o botão (oculto) */
+.container__botao {
+    display: none;
+}
+
+/* Estilo para o título do container (oculto) */
+.container__titulo {
+    display: none;
+}
+
+/* Estilo para as opções (ocultas) */
+.opções {
+    display: none;
+}
+
+/* Estilo para o texto do contêiner (oculto) */
+.container__texto {
+    display: none;
+}
